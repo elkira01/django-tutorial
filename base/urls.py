@@ -19,7 +19,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.endpoint),
-    path('advocates/', views.advocates_list),
-    path('advocate/<username>', views.advocate_detail),
+    path('', views.endpoints),
+    path('advocate/', views.advocates_list),
+    path('advocate/<int:id>', views.advocate_detail),
+    path('advocate/create', views.create_advocate),
+    path('advocate/<int:id>/update', views.update_advocate),
+    path('advocate/<int:id>/delete', views.delete_advocate),
 ]
