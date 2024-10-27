@@ -25,4 +25,10 @@ urlpatterns = [
     path('advocate/create', views.create_advocate),
     path('advocate/<int:id>/update', views.update_advocate),
     path('advocate/<int:id>/delete', views.delete_advocate),
+    path('company/', views.company_list),
+    path('company/<int:id>', views.company_detail),
+    path('company/create', views.create_company),
+    # path('rental/', views.rental_list),
+    # path('rental/create', views.create_rental_property),
+    # path('rental/<int:id>', views.view_rental_property),
 ]
